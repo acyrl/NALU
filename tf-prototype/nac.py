@@ -14,8 +14,8 @@ def nac(input_layer, num_outputs):
     shape = (input_layer.shape.dims[-1].value, num_outputs)
     
     with tf.name_scope("NAC"):
-        W_hat = tf.Variable(tf.truncated_normal(shape, stddev=0.02), name="W_hat")
-        M_hat = tf.Variable(tf.truncated_normal(shape, stddev=0.02), name="M_hat")
+        W_hat = tf.Variable(tf.truncated_normal(shape, stddev=5), name="W_hat")
+        M_hat = tf.Variable(tf.truncated_normal(shape, stddev=5), name="M_hat")
         W = tf.multiply(tf.tanh(W_hat), tf.sigmoid(M_hat))
         a = tf.matmul(input_layer, W)
         return a
