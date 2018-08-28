@@ -1,8 +1,7 @@
-import numpy as np
 import keras.backend as K
 import tensorflow as tf
-from keras.layers import *
-from keras.models import *
+from keras.layers import Layer
+from keras import initializers
 
 class NALU(Layer):
     
@@ -43,7 +42,7 @@ class NALU(Layer):
         W = K.tanh(self.W_hat) * K.sigmoid(self.M_hat)
         a = K.dot(inputs, W)
         m = K.exp(K.dot(K.log(K.abs(inputs) + self.epsilon), W))
-        g = K.sigmoid(K.dot(x, self.G))
+        g = K.sigmoid(K.dot(inputs, self.G))
         y = g*a + (1-g)*m
         
         return y

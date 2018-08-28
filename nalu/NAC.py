@@ -1,8 +1,7 @@
-import numpy as np
 import keras.backend as K
 import tensorflow as tf
-from keras.layers import *
-from keras.models import *
+from keras.layers import Layer
+from keras import initializers
 
 class NAC(Layer):
     
