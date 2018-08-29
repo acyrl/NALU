@@ -1,2 +1,13 @@
 # NALU
-Implementation of NALU in Keras. 
+
+This repository contains a basic k
+
+
+# Basic idea
+* Basic tf/keras implementation.
+
+
+
+
+# References and other resources. 
+
