@@ -4,7 +4,7 @@ This repository contains an custom keras layer that implements the Neural Arithm
 
 See *basic_experiments.ipynb* for basic examples of how to use the code as well as small collection of experiments -- being expanded.
 
-# Todo
+## Todo
 
 Not in any particular order:
 
@@ -16,7 +16,7 @@ Not in any particular order:
 - [ ] Following [this](https://www.reddit.com/r/MachineLearning/comments/94833t/neural_arithmetic_logic_units/e3u974x), investigate and implement any tweaks to NALU.
 
 
-# References and other resources. 
+## References and other resources. 
 
 Some interesting resources about NALU.
 
