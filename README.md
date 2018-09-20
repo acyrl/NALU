@@ -12,7 +12,7 @@ Not in any particular order:
 - [ ] Expand this Readme to include more info about the idea behind NALU.
 - [ ] Replicate the experiments found in the paper -- currently done: id and +.
 - [ ] Investigate the extrapolation error of NALU. 
-- [ ] Add callback to the Keras layer so monitor it using it on tensorboard. 
+- [x] Add callback so we can use tensorboard. 
 - [ ] Following [this](https://www.reddit.com/r/MachineLearning/comments/94833t/neural_arithmetic_logic_units/e3u974x), investigate and implement any tweaks to NALU.
 
 
