@@ -24,7 +24,7 @@ class GenerateDatasetHelper():
         return 
 
 
-def gd_uniform(lower_bound=0, upper_bound=5, size=1000, calc_output=True, op=None):
+def gd_uniform(lower_bound=0, upper_bound=5, size=1000, calc_output=True, op=None, depth=2):
     """
     
     Generates data (a, b, f(a, b)), where a and b are draw independetly from
@@ -32,7 +32,7 @@ def gd_uniform(lower_bound=0, upper_bound=5, size=1000, calc_output=True, op=Non
     f(a,b) = a+b.
     
     """ 
-    X = np.random.uniform(lower_bound, upper_bound, (size, 2))        
+    X = np.random.uniform(lower_bound, upper_bound, (size, depth))        
     Y = GenerateDatasetHelper.generate_result(X, op)
 
     return X, Y

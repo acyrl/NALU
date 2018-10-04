@@ -5,13 +5,11 @@ from keras import initializers
 
 class NAC(Layer):
     
-    def __init__(self,
-                 units,
+    def __init__(self, units,
                  W_hat_initializer='glorot_uniform',
                  M_hat_initializer='glorot_uniform',
                  name=None,
-                 **kwargs
-                ):
+                 **kwargs):
         
         super(NAC, self).__init__(**kwargs)
         

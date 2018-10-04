@@ -5,15 +5,13 @@ from keras import initializers
 
 class NALU(Layer):
     
-    def __init__(self,
-                 units,
+    def __init__(self, units,
                  W_hat_initializer = 'glorot_uniform',
                  M_hat_initializer = 'glorot_uniform',
                  G_initializer = 'glorot_uniform',
                  epsilon=1e-7,
                  name=None,
-                 **kwargs
-                ):
+                 **kwargs):
         
         super(NALU, self).__init__(**kwargs)
         
